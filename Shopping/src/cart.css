@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+*{
+    user-select: none;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navigation{
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.logolink{
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+.logolink span{
+    font-size: 1.65rem;
+
+}
+.cartProduct{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+.cartImg{
+    border-radius: 9px;
+    width: 80px;
+    height: 80px;
+}
+@media (max-width: 600px) {
+    *{
+        font-size: 0.9rem;
+    }
+    .cartImg{
+        border-radius: 3px;
+        width: 40px;
+        height: 40px;
+    }
+    .logolink span{
+        text-decoration: none;
+        font-size: 1.45rem;
+        font-weight: 700;
+        color: inherit;
+    }
+    .font{
+        font-size: 1rem;
+    }
+}

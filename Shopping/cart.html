@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Document</title>
+
+</head>
+<body>
+  <header class="navigation container">
+    <div class="container bg-dark text-white py-md-4 py-2 rounded">
+      <div class="row align-items-center gy-3">
+        <!-- Left elements -->
+        <div class="col-7">
+          <a href="index.html" target="_blank" class="float-start logolink d-flex align-items-center">
+            <img src="src/images/eagle.png" width="45" class="animate__animated animate__pulse animate__infinite"/>
+            <span class="fw-bolder font-monospace">EagleStore</span>
+          </a>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <div class="col-5">
+          <div class="d-flex float-end">
+            <a id="signIn" href="signup.html" class="me-1 btn py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-user-alt m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Sign in</p> </a>
+            <a href="cart.html" class="btn py-1 px-3 nav-link d-flex align-items-center" target="_blank"><span class="badge bg-danger"></span> <i class="fas fa-shopping-cart m-1 me-md-2"></i><p class="d-none d-md-block mb-0">My cart</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container animate__animated animate__zoomIn">
+      <div class="container py-2 position-relative" id="checkOut">
+        <h1 class="bg-light-subtle p-2 rounded-2 text-end fw-bold">Shopping Cart</h1>
+        <div id="emptyCart" class="text-center my-3"></div>
+        <div id="totalDiv" class=""></div>
+        <div id="productSelect" class="position-relative"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="src/data.js"></script>
+  <script src="src/cart.js"></script>
+</body>
+</html>
